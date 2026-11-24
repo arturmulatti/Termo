@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>10 Exercícios de HTML e CSS</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main class="pagina">
+    <header class="topo">
+      <div>
+        <h1>10 Exercícios de HTML e CSS</h1>
+        <p>Pratique as principais tags HTML e propriedades CSS mais utilizadas no mercado.</p>
+      </div>
+      <aside class="objetivo">
+        <span class="capelo" aria-hidden="true">🎓</span>
+        <div><strong>Objetivo</strong><p>Completar cada exercício a partir do ponto de partida, pesquisando e aplicando os conceitos de HTML e CSS para alcançar o resultado proposto.</p></div>
+      </aside>
+    </header>
+
+    <section class="exercicios">
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero azul">1</span><div><h2>Página Pessoal (Perfil)</h2><p>Crie uma página de apresentação pessoal com foto, nome, descrição e redes sociais.</p></div></div>
+        <div class="tags azul-texto"><b>Principais tags e conceitos</b><br>• header, img, h1, p, a, ul, li, div<br>• centralizar, border-radius, hover</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;!DOCTYPE html&gt;
+&lt;html lang="pt-br"&gt;
+&lt;head&gt;
+  &lt;meta charset="UTF-8"&gt;
+  &lt;title&gt;Meu Perfil&lt;/title&gt;
+  &lt;link rel="stylesheet" href="style.css"&gt;
+&lt;/head&gt;
+&lt;body&gt;
+  &lt;!-- Complete aqui --&gt;
+&lt;/body&gt;
+&lt;/html&gt;</pre></div>
+        <div class="resultado"><b>Resultado esperado (exemplo)</b><div class="perfil demo"><div class="avatar"></div><h3>Seu Nome</h3><small>Desenvolvedor Web</small><div class="social"><i>●</i><i>in</i><i>◎</i></div><p> Apaixonado por tecnologia e por transformar ideias em soluções.</p></div></div>
+      </article>
+
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero verde">2</span><div><h2>Card de Produto</h2><p>Crie um card para mostrar um produto com imagem, título, descrição, preço e botão.</p></div></div>
+        <div class="tags verde-texto"><b>Principais tags e conceitos</b><br>• div, img, h2, p, span, button<br>• border, border-radius, hover</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;div class="card"&gt;
+  &lt;!-- imagem --&gt;
+  &lt;!-- título --&gt;
+  &lt;!-- descrição --&gt;
+  &lt;!-- preço --&gt;
+  &lt;!-- botão --&gt;
+&lt;/div&gt;</pre></div>
+        <div class="resultado"><b>Resultado esperado (exemplo)</b><div class="produto demo"><div class="notebook">▰<span>⌨</span></div><div><h3>Notebook Gamer</h3><p>Alto desempenho para seus jogos e trabalhos.</p><strong>R$ 4.999,00</strong><button>Comprar</button></div></div></div>
+      </article>
+
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero laranja">3</span><div><h2>Menu de Navegação</h2><p>Crie um menu horizontal com links e efeito hover.</p></div></div>
+        <div class="tags azul-texto"><b>Principais tags e conceitos</b><br>• nav, ul, li, a<br>• flexbox, hover, background-color</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;nav&gt;
+  &lt;ul&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Início&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Sobre&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Serviços&lt;/a&gt;&lt;/li&gt;
+    &lt;li&gt;&lt;a href="#"&gt;Contato&lt;/a&gt;&lt;/li&gt;
+  &lt;/ul&gt;
+&lt;/nav&gt;</pre></div>
+        <div class="resultado"><b>Resultado esperado (exemplo)</b><nav class="menu demo"><a>Início</a><a>Sobre</a><a class="ativo">Serviços</a><a>Contato</a></nav></div>
+      </article>
+
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero roxo">4</span><div><h2>Seção de Serviços</h2><p>Crie uma seção com 3 cards de serviços usando ícones, título e descrição.</p></div></div>
+        <div class="tags roxo-texto"><b>Principais tags e conceitos</b><br>• section, div, h2, p, img (ou ícone)<br>• grid/flexbox, border-radius, hover</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;section&gt;
+  &lt;h2&gt;Nossos Serviços&lt;/h2&gt;
+  &lt;div class="servicos"&gt;
+    &lt;!-- 3 cards --&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre></div>
+        <div class="resultado"><b>Resultado esperado (exemplo)</b><div class="servicos demo"><h3>Nossos Serviços</h3><div class="servico-grid"><div><span>▣</span><b>Desenvolvimento Web</b><small>Sites e aplicações modernas.</small></div><div><span>♧</span><b>Suporte Técnico</b><small>Assistência especializada.</small></div><div><span>♙</span><b>Consultoria</b><small>Soluções personalizadas.</small></div></div></div></div>
+      </article>
+
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero vermelho">5</span><div><h2>Tabela de Alunos</h2><p>Crie uma tabela estilizada com nomes, notas e situação.</p></div></div>
+        <div class="tags vermelho-texto"><b>Principais tags e conceitos</b><br>• table, thead, tbody, tr, th, td<br>• border, background-color, hover</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;table&gt;
+  &lt;thead&gt;
+    &lt;!-- cabeçalho --&gt;
+  &lt;/thead&gt;
+  &lt;tbody&gt;
+    &lt;!-- linhas --&gt;
+  &lt;/tbody&gt;
+&lt;/table&gt;</pre></div>
+        <div class="resultado"><b>Ponto de esperado (exemplo)</b><table class="alunos demo"><thead><tr><th>Nome</th><th>Nota</th><th>Situação</th></tr></thead><tbody><tr><td>Ana</td><td>85</td><td><em class="aprovado">Aprovado</em></td></tr><tr><td>Carlos</td><td>55</td><td><em class="recuperacao">Recuperação</em></td></tr><tr><td>Maria</td><td>92</td><td><em class="aprovado">Aprovado</em></td></tr><tr><td>João</td><td>38</td><td><em class="reprovado">Reprovado</em></td></tr></tbody></table></div>
+      </article>
+
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero ciano">6</span><div><h2>Formulário de Contato</h2><p>Crie um formulário com campos de nome, e-mail, assunto, mensagem e botão de envio.</p></div></div>
+        <div class="tags azul-texto"><b>Principais tags e conceitos</b><br>• form, label, input, textarea, button<br>• padding, border, border-radius, hover</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;form&gt;
+  &lt;!-- nome --&gt;
+  &lt;!-- e-mail --&gt;
+  &lt;!-- assunto --&gt;
+  &lt;!-- mensagem --&gt;
+  &lt;!-- botão --&gt;
+&lt;/form&gt;</pre></div>
+        <div class="resultado"><b>Resultado esperado (exemplo)</b><form class="contato demo"><h3>Fale Conosco</h3><label>Nome<input placeholder="Seu nome"></label><label>Assunto<select><option>Selecione...</option></select></label><label>E-mail<input placeholder="seu@email.com"></label><label>Mensagem<textarea placeholder="Digite sua mensagem..."></textarea></label><button>Enviar Mensagem</button></form></div>
+      </article>
+
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero azul">7</span><div><h2>Layout com Sidebar</h2><p>Crie um layout com menu lateral e conteúdo principal.</p></div></div>
+        <div class="tags azul-texto"><b>Principais tags e conceitos</b><br>• aside, main, div, ul, li, a<br>• flexbox, height, background, hover</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;div class="layout"&gt;
+  &lt;aside class="sidebar"&gt;
+    &lt;!-- menu --&gt;
+  &lt;/aside&gt;
+  &lt;main class="conteudo"&gt;
+    &lt;h1&gt;Conteúdo Principal&lt;/h1&gt;
+    &lt;p&gt;...&lt;/p&gt;
+  &lt;/main&gt;
+&lt;/div&gt;</pre></div>
+        <div class="resultado"><b>Resultado esperado (exemplo)</b><div class="admin demo"><aside>⌂ &nbsp; Início<br>▣ &nbsp; Produtos<br>▤ &nbsp; Relatórios<br>⚙ &nbsp; Configurações</aside><div><h3>Conteúdo Principal</h3><p>Bem-vindo ao sistema. Aqui ficará o conteúdo da página.</p></div></div></div>
+      </article>
+
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero rosa">8</span><div><h2>Galeria de Imagens</h2><p>Crie uma galeria com várias imagens em grid, com efeito hover.</p></div></div>
+        <div class="tags rosa-texto"><b>Principais tags e conceitos</b><br>• div, img<br>• grid, gap, border-radius, hover</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;div class="galeria"&gt;
+  &lt;!-- várias imagens --&gt;
+&lt;/div&gt;</pre></div>
+        <div class="resultado"><b>Resultado esperado (exemplo)</b><div class="galeria demo"><div class="foto f1"></div><div class="foto f2"></div><div class="foto f3"></div><div class="foto f4"></div><div class="foto f5"></div><div class="foto f6"></div></div></div>
+      </article>
+
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero amarelo">9</span><div><h2>Landing Page Simples</h2><p>Crie uma página de divulgação com uma seção de destaque, chamada para ação e recursos.</p></div></div>
+        <div class="tags laranja-texto"><b>Principais tags e conceitos</b><br>• header, section, h1, p, a, button<br>• background, centralizar, hover</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;header class="hero"&gt;
+  &lt;h1&gt;Título&lt;/h1&gt;
+  &lt;p&gt;Descrição&lt;/p&gt;
+  &lt;a href="#" class="btn"&gt;Começar&lt;/a&gt;
+&lt;/header&gt;
+
+&lt;section class="recursos"&gt;
+  &lt;!-- 3 recursos --&gt;
+&lt;/section&gt;</pre></div>
+        <div class="resultado"><b>Resultado esperado (exemplo)</b><div class="landing demo"><div class="hero"><h2>Sua ideia em<br>uma solução real</h2><p>Desenvolvimento web para impulsionar seu negócio.</p><button>Começar Agora</button></div><div class="recursos"><div>◉<b>Rápido</b><small>Entrega eficiente</small></div><div>♧<b>Seguro</b><small>Seus dados protegidos</small></div><div>☏<b>Suporte</b><small>Sempre ao seu lado</small></div></div></div></div>
+      </article>
+
+      <article class="exercicio">
+        <div class="cabecalho"><span class="numero verde">10</span><div><h2>Portfólio de Projetos</h2><p>Crie uma seção de portfólio com cards de projetos e links para ver mais detalhes.</p></div></div>
+        <div class="tags verde-texto"><b>Principais tags e conceitos</b><br>• div, img, h2, p, a, button<br>• grid, border-radius, hover</div>
+        <div class="codigo"><b>♙ Ponto de partida (index.html)</b><pre>&lt;section&gt;
+  &lt;h2&gt;Meus Projetos&lt;/h2&gt;
+  &lt;div class="projetos"&gt;
+    &lt;!-- cards de projetos --&gt;
+  &lt;/div&gt;
+&lt;/section&gt;</pre></div>
+        <div class="resultado"><b>Resultado esperado (exemplo)</b><div class="portfolio demo"><h3>Meus Projetos</h3><div class="projeto-grid"><div><div class="thumb t1"></div><b>Sistema Escolar</b><small>Aplicação web para gestão.</small><button>Ver Projeto</button></div><div><div class="thumb t2"></div><b>Loja Virtual</b><small>E-commerce moderno.</small><button>Ver Projeto</button></div><div><div class="thumb t3"></div><b>App de Tarefas</b><small>Organize seu dia a dia.</small><button>Ver Projeto</button></div></div></div></div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
